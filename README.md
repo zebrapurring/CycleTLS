@@ -640,7 +640,7 @@ Feel free to open an [Issue](https://github.com/Danny-Dasilva/CycleTLS/issues/ne
 ### Cross Compiling for other platforms
 <details>
 
-Natively the 3 Operating System types `linux`, `darwin` , `windows`  should cover most use cases.
+Natively the 4 Operating System types `linux`, `darwin`, `windows` and `freebsd` should cover most use cases.
 	
 You can use the built in Golang cross compiling commands `go build` to compile for another operating system. 
 
