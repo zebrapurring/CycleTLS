@@ -131,10 +131,10 @@ class Golang extends EventEmitter {
       debug: boolean
   ){
     const PLATFORM_BINARIES: { [platform: string]: { [arch: string]: string } } = {
-      "win32":    { "x64": "index.exe" },
-      "linux":    { "arm": "index-arm", "arm64": "index-arm64", "x64": "index" },
-      "darwin":   { "x64": "index-mac" },
-      "freebsd":  { "x64": "index-freebsd" }
+      "win32":    { "x64": "cycletls-win-amd64.exe" },
+      "linux":    { "arm": "cycletls-linux-arm", "arm64": "cycletls-linux-arm64", "x64": "cycletls-linux-amd64" },
+      "darwin":   { "x64": "cycletls-mac-amd64" },
+      "freebsd":  { "x64": "cycletls-freebsd-amd64" }
     };
 
     const executableFilename = PLATFORM_BINARIES[process.platform]?.[os.arch()];
